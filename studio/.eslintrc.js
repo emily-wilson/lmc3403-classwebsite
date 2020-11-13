@@ -5,7 +5,12 @@ module.exports = {
   parser: 'babel-eslint',
   rules: {
     'react/prop-types': 0,
-    'object-curly-spacing': ['error', 'never']
+		'no-tabs': ['error', { allowIndentationTabs: true }],
+		'indent': ['error', 'tab'],
+		'comma-dangle': ['error', 'always-multiline'],
+		'semi': ['error', 'always'],
+		'object-curly-spacing': ['error', 'always'],
+		'space-before-function-paren': ['error', 'never']
   },
   settings: {
     react: {

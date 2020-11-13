@@ -13,6 +13,7 @@ import siteConfig from './documents/siteConfig';
 import cta from './objects/cta';
 import embedHTML from './objects/embedHTML';
 import figure from './objects/figure';
+import glossaryTerm from './objects/glossaryTerm';
 import internalLink from './objects/internalLink';
 import link from './objects/link';
 import portableText from './objects/portableText';
@@ -26,23 +27,24 @@ import textSection from './objects/textSection';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
-  name: 'default',
-  // Then proceed to concatenate our our document type
-  // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([
-    cta,
-    embedHTML,
-    figure,
-    hero,
-    imageSection,
-    internalLink,
-    link,
-    mailchimp,
-    page,
-    portableText,
-    route,
-    simplePortableText,
-    siteConfig,
-    textSection,
-  ]),
+	name: 'default',
+	// Then proceed to concatenate our our document type
+	// to the ones provided by any plugins that are installed
+	types: schemaTypes.concat([
+		cta,
+		embedHTML,
+		figure,
+		glossaryTerm,
+		hero,
+		imageSection,
+		internalLink,
+		link,
+		mailchimp,
+		page,
+		portableText,
+		route,
+		simplePortableText,
+		siteConfig,
+		textSection,
+	]),
 });
