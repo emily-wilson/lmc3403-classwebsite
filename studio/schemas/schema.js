@@ -13,7 +13,6 @@ import siteConfig from './documents/siteConfig';
 import cta from './objects/cta';
 import embedHTML from './objects/embedHTML';
 import figure from './objects/figure';
-import glossaryTerm from './objects/glossaryTerm';
 import internalLink from './objects/internalLink';
 import link from './objects/link';
 import portableText from './objects/portableText';
@@ -24,6 +23,8 @@ import hero from './objects/hero';
 import imageSection from './objects/imageSection';
 import mailchimp from './objects/mailchimp';
 import textSection from './objects/textSection';
+import glossaryTerm from './objects/glossaryTerm';
+import audio from './objects/audio';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -31,6 +32,7 @@ export default createSchema({
 	// Then proceed to concatenate our our document type
 	// to the ones provided by any plugins that are installed
 	types: schemaTypes.concat([
+		audio,
 		cta,
 		embedHTML,
 		figure,

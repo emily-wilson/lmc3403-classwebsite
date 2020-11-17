@@ -1,21 +1,21 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-  extends: ['standard', 'standard-react'],
-  parser: 'babel-eslint',
-  rules: {
-    'react/prop-types': 0,
+	extends: ['standard', 'standard-react', 'prettier'],
+	parser: 'babel-eslint',
+	rules: {
+		'react/prop-types': 0,
 		'no-tabs': ['error', { allowIndentationTabs: true }],
-		'indent': ['error', 'tab'],
+		indent: ['error', 'tab'],
 		'comma-dangle': ['error', 'always-multiline'],
-		'semi': ['error', 'always'],
+		semi: ['error', 'always'],
 		'object-curly-spacing': ['error', 'always'],
-		'space-before-function-paren': ['error', 'never']
-  },
-  settings: {
-    react: {
-      pragma: 'React',
-      version: '16.8.6'
-    }
-  }
-}
+		'space-before-function-paren': ['error', 'never'],
+	},
+	settings: {
+		react: {
+			pragma: 'React',
+			version: '16.8.6',
+		},
+	},
+};

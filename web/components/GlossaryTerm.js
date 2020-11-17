@@ -5,9 +5,10 @@ import styles from './GlossaryTerm.module.css';
 
 const GlossaryTerm = ({ node }) => {
 	return (
-		<div className={styles.tooltip}>{node.term}
+		<span className={styles.tooltip}>
+			{node.term}
 			<span className={styles.tooltiptext}>{node.definition}</span>
-		</div>
+		</span>
 	);
 };
 
@@ -18,4 +19,4 @@ GlossaryTerm.propTypes = {
 	}),
 };
 
-export default GlossaryTerm
+export default GlossaryTerm;

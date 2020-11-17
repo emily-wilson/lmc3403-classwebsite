@@ -1,25 +1,27 @@
 @import './custom-properties.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 html {
-  font-family: var(--font-family-sans);
-  font-size: var(--font-base-size);
-  line-height: var(--font-base-line-height);
+	/* font-family: var(--font-family-sans); */
+	font-family: 'Open Sans', sans-serif;
+	font-size: var(--font-base-size);
+	line-height: var(--font-base-line-height);
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  background: var(--color-white);
-  color: var(--color-black);
-  margin: 0;
+	-webkit-font-smoothing: antialiased;
+	/* background: var(--color-dark-green); */
+	/* color: var(--color-white); */
+	margin: 0;
 }
 
 html,
 body,
 :global(#__next),
 :global(.container) {
-  height: 100%;
+	height: 100%;
 }
 
 :global(.content) {
-  min-height: calc(100% - 84px - 218px);
+	min-height: calc(100% - 84px - 218px);
 }
