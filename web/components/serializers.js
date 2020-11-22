@@ -1,12 +1,15 @@
 import EmbedHTML from './EmbedHTML';
 import Figure from './Figure';
-import GlossaryTerm from './GlossaryTerm';
+import GlossaryLink from './GlossaryLink';
+import GlossaryAnchor from './GlossaryAnchor';
 
 const serializers = {
 	types: {
 		embedHTML: EmbedHTML,
 		figure: Figure,
-		glossaryTerm: GlossaryTerm,
+	}, marks: {
+		glossaryLink: GlossaryLink,
+		glossaryAnchor: GlossaryAnchor,
 	},
 };
 

@@ -23,7 +23,8 @@ import hero from './objects/hero';
 import imageSection from './objects/imageSection';
 import mailchimp from './objects/mailchimp';
 import textSection from './objects/textSection';
-import glossaryTerm from './objects/glossaryTerm';
+import glossaryAnchor from './objects/glossaryAnchor';
+import glossaryLink from './objects/glossaryLink';
 import audio from './objects/audio';
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -36,7 +37,8 @@ export default createSchema({
 		cta,
 		embedHTML,
 		figure,
-		glossaryTerm,
+		glossaryAnchor,
+		glossaryLink,
 		hero,
 		imageSection,
 		internalLink,
